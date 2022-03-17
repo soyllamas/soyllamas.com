@@ -73,34 +73,34 @@
     <section>
         <h3>Education</h3>
         <div>
-            <p class="title">Universidad Utel - Computer Science Engineering</p>
+            <p class="title">Universidad Tecnológica Latinoamericana - B.S. Computer Engineering</p>
             <p class="subtitle">July 2020 - October 2022</p>
         </div>
         <div class="entry">
-            <p class="title">Tecnológico de Monterrey - Computer Science Engineering</p>
+            <p class="title">Tecnológico de Monterrey - B.S. Computer Engineering</p>
             <p class="subtitle">August 2016 - February 2018</p>
         </div>
     </section>
     <section>
         <h3>Certifications</h3>
         <div>
-            <p class="title">Android Mobile Apprenticeship Program - Wizeline Academy</p>
+            <a class="title" href="/Android-Mobile-Apprenticeship-Program-Certificate.pdf" target="_blank">Android Mobile Apprenticeship Program - Wizeline Academy</a>
             <p class="subtitle">Issued February 2021</p>
         </div>
         <div class="entry">
-            <p class="title">Prof G Certified Brand Strategist - Section4</p>
+            <a class="title" href="https://www.credly.com/badges/e5d552e0-f640-47d5-887d-04d72310b5ef" target="_blank">Prof G Certified Brand Strategist - Section4</a>
             <p class="subtitle">Issued November 2020</p>
         </div>
         <div class="entry">
-            <p class="title">Prof G Certified Business Strategist - Section4</p>
+            <a class="title" href="https://www.credly.com/badges/a8ff6ff5-09b2-4312-adde-aacda0ced0ea" target="_blank">Prof G Certified Business Strategist - Section4</a>
             <p class="subtitle">Issued June 2020</p>
         </div>
         <div class="entry">
-            <p class="title">Data Analyst - Udacity</p>
+            <a class="title" href="https://graduation.udacity.com/confirm/K7J5726R" target="_blank">Data Analyst - Udacity</a>
             <p class="subtitle">Issued March 2019</p>
         </div>
         <div class="entry">
-            <p class="title">Data Foundations - Udacity</p>
+            <a class="title" href="https://graduation.udacity.com/confirm/CCA3ZYTA" target="_blank">Data Foundations - Udacity</a>
             <p class="subtitle">Issued August 2018</p>
         </div>
     </section>
@@ -138,6 +138,16 @@
         font-size: 36px;
         margin-bottom: 24px;
         font-weight: 700;
+    }
+
+    a {
+        color: black;
+        text-decoration: none;
+    }
+
+    a:hover {
+        color: black;
+        text-decoration: underline;
     }
 
     .title {

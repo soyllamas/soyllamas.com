@@ -48,7 +48,7 @@
             <a href="https://wizeline.com"><p class="title">Software Engineer II, Android — Wizeline</p></a>
             <p class="subtitle">January 2021 — April 2022</p>
             <ul>
-                <li>Migrated Walmart's México app from manual dependency injection to Android’s recommended framework,
+                <li>Migrated Walmart-México's app from manual dependency injection to Android’s recommended framework,
                     Hilt. Reducing boilerplate, improving productivity.
                 </li>
                 <li>Participated as an active member of a community which fosters high-quality software development
@@ -64,7 +64,7 @@
             <p class="subtitle">November 2015 — January 2021</p>
             <ul>
                 <li>Managed a cross-functional team of 14 people conformed of marketers, developers, designers and
-                    academics using <a href="https://agilemanifesto.org/">Agile principles</a>.
+                    academics following <a href="https://agilemanifesto.org/">agile principles</a>.
                 </li>
                 <li>Implemented <a href="https://www.whatmatters.com/faqs/okr-meaning-definition-example">OKRs</a> to
                     define specific goals for the company and individual contributors.

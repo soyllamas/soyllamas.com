@@ -305,6 +305,14 @@
         align-items: stretch;
     }
 
+    .books a {
+        transition: all .2s ease-in-out;
+    }
+
+    .books a:hover {
+        transform: scale(1.03);
+    }
+
     div img {
         width: 100%;
         height: 100%;

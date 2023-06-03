@@ -41,8 +41,12 @@
     <section>
         <h3>Work Experience</h3>
         <div>
+            <a href="https://letsmake.com"><p class="title">Software Engineer, Flutter — Make</p></a>
+            <p class="subtitle">February 2023 — Present</p>
+        </div>
+        <div class="entry">
             <a href="https://fondeadora.com"><p class="title">Software Engineer, Flutter — Fondeadora</p></a>
-            <p class="subtitle">April 2022 — Present</p>
+            <p class="subtitle">April 2022 — February 2023</p>
         </div>
         <div class="entry">
             <a href="https://wizeline.com"><p class="title">Software Engineer II, Android — Wizeline</p></a>

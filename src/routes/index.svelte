@@ -47,6 +47,19 @@
         <div class="entry">
             <a href="https://fondeadora.com"><p class="title">Software Engineer, Flutter — Fondeadora</p></a>
             <p class="subtitle">April 2022 — February 2023</p>
+            <ul>
+                <li>Enabled our team to adopt <a href="https://en.wikipedia.org/wiki/Extreme_programming">Extreme
+                    Programming (XP)</a> values, principles and practices resulting in improved collaboration, faster
+                    feedback loops and enhanced software quality.
+                </li>
+                <li>Facilitated the transition from Git-flow to <a href="https://trunkbaseddevelopment.com/">Trunk-Based
+                    Development</a> leading to faster delivery, smooth code integration, and increased software
+                    stability.
+                </li>
+                <li>Emphasized pair programming, continuous integration, and test-driven development, boosting
+                    productivity, minimizing defects, and nurturing a culture of continuous improvement.
+                </li>
+            </ul>
         </div>
         <div class="entry">
             <a href="https://wizeline.com"><p class="title">Software Engineer II, Android — Wizeline</p></a>

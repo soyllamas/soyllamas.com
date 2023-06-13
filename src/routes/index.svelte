@@ -23,7 +23,7 @@
 </svelte:head>
 
 <nav>
-    <img class="face" src="/face.png"/>
+    <img class="face" src="/face.png" alt="Daniel Llamas"/>
     <p class="name">Daniel<br/>Llamas</p>
     <a class="link" href="https://www.linkedin.com/in/soyllamas/">LinkedIn</a>
     <a class="link" href="https://twitter.com/soyllamas">Twitter</a>
@@ -34,7 +34,7 @@
 <section class="hero">
     <h1 class="summary"><span class="gradient-text">Android & Flutter Developer</span> — 👋🏼 I'm a passionate creator
         of high-quality human-centered products. Currently working as Flutter developer at <a
-                href="http://fondeadora.com">Fondeadora</a>.</h1>
+                href="https://fondeadora.com">Fondeadora</a>.</h1>
 </section>
 
 <main>
@@ -234,11 +234,11 @@
         font-weight: 700;
     }
 
-    h2 {
-        font-size: 16px;
-        font-weight: 400;
-        text-align: center;
-    }
+    /*h2 {*/
+    /*    font-size: 16px;*/
+    /*    font-weight: 400;*/
+    /*    text-align: center;*/
+    /*}*/
 
     h3 {
         font-size: 36px;

@@ -3,14 +3,14 @@
     <title>Daniel Llamas - Android & Flutter Developer</title>
     <meta name="title" content="Daniel Llamas - Android & Flutter Developer">
     <meta name="description"
-          content="🧠 Inquisitive human being. 🎨 Passionate creator of high-quality human-centered products. 🎉 Bringing humanity to technology through compelling digital experiences. Currently working as Flutter Developer @ Fondeadora.">
+          content="🧠 Inquisitive human being. 🎨 Passionate creator of high-quality human-centered products. 🎉 Bringing humanity to technology through compelling digital experiences. Currently working as Flutter Developer @ Make.">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://soyllamas.com/">
     <meta property="og:title" content="Daniel Llamas - Android & Flutter Developer">
     <meta property="og:description"
-          content="🧠 Inquisitive human being. 🎨 Passionate creator of high-quality human-centered products. 🎉 Bringing humanity to technology through compelling digital experiences. Currently working as Flutter Developer @ Fondeadora.">
+          content="🧠 Inquisitive human being. 🎨 Passionate creator of high-quality human-centered products. 🎉 Bringing humanity to technology through compelling digital experiences. Currently working as Flutter Developer @ Make.">
     <meta property="og:image" content="https://soyllamas.com/cover.jpg">
 
     <!-- Twitter -->
@@ -18,7 +18,7 @@
     <meta property="twitter:url" content="https://soyllamas.com/">
     <meta property="twitter:title" content="Daniel Llamas - Android & Flutter Developer">
     <meta property="twitter:description"
-          content="🧠 Inquisitive human being. 🎨 Passionate creator of high-quality human-centered products. 🎉 Bringing humanity to technology through compelling digital experiences. Currently working as Flutter Developer @ Fondeadora.">
+          content="🧠 Inquisitive human being. 🎨 Passionate creator of high-quality human-centered products. 🎉 Bringing humanity to technology through compelling digital experiences. Currently working as Flutter Developer @ Make.">
     <meta property="twitter:image" content="https://soyllamas.com/cover.jpg">
 </svelte:head>
 
@@ -33,8 +33,8 @@
 
 <section class="hero">
     <h1 class="summary"><span class="gradient-text">Android & Flutter Developer</span> — 👋🏼 I'm a passionate creator
-        of high-quality human-centered products. Currently working as Flutter developer at <a
-                href="https://fondeadora.com">Fondeadora</a>.</h1>
+        of high-quality human-centered products. Currently working as Flutter Developer at <a
+                href="https://letsmake.com">Make</a>.</h1>
 </section>
 
 <main>
@@ -56,8 +56,8 @@
                     Development</a> leading to faster delivery, smooth code integration, and increased software
                     stability.
                 </li>
-                <li>Emphasized pair programming, continuous integration, and test-driven development, boosting
-                    productivity, minimizing defects, and nurturing a culture of continuous improvement.
+                <li>Boosted productivity and minimized defects by nurturing a culture of continuous improvement,
+                    emphasizing on pair programming, test-driven development and continuous integration.
                 </li>
             </ul>
         </div>

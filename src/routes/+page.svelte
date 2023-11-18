@@ -224,6 +224,7 @@
         font-size: 4.3vw;
         position: absolute;
         bottom: 0;
+        line-height: 125%;
     }
 
     h1 {

@@ -1,5 +1,5 @@
 <div class="mx-8 md:mx-auto max-w-2xl my-16">
-    <h1>Política de Privacidad para Mi Inventario</h1>
+    <h1>Política de Privacidad</h1>
 
     <p>En "Mi Inventario", accesible desde [URL de la App], una de nuestras principales prioridades es la privacidad
         de

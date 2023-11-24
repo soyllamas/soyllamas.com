@@ -1,3 +1,10 @@
+<head:script>
+    <title>Mi Inventario — Revoluciona tu negocio desde tu celular</title>
+    <meta name="title" content="Mi Inventario — Revoluciona tu negocio desde tu celular">
+    <meta name="description"
+          content="La nueva solución digital diseñada específicamente para consultoras de belleza Mary Kay como tú.">
+</head:script>
+
 <script>
     import {onMount} from "svelte";
 
@@ -7,8 +14,9 @@
         const userAgent = navigator.userAgent || navigator.vendor || window.opera;
 
         // Redireccionar a Apple App Store para usuarios de iOS
-        if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+        if (/ipad|iphone|ipod|macintosh/.test(userAgent?.toLowerCase()) && !window.MSStream) {
             link = "https://apps.apple.com/us/app/mi-inventario/id1143869215";
+            return;
         }
 
     });
@@ -49,13 +57,20 @@
     <p>¡Esperamos que disfrutes de los beneficios de <a class="text-rose-500 underline" href="{link}" target="_blank">Mi
         Inventario</a> y
         te deseamos mucho éxito en tu camino con Mary Kay!</p>
-    <p>Daniel Llamas <br> <a href="mailto:daniel@soyllamas.com">daniel@soyllamas.com</a></p>
+    <p>Daniel Llamas <br> <a href="mailto:daniel@soyllamas.com" class="text-rose-500 underline">daniel@soyllamas.com</a>
+    </p>
 </div>
-<div class="fixed bottom-0 left-0 w-full p-6 md:p-12" style="env(safe-area-inset-bottom)">
-    <a href="{link}"
+<div class="fixed grid grid-cols-2 sm:block pointer-events-none text-right bottom-0 left-0 w-full p-6 md:p-12"
+     style="env(safe-area-inset-bottom);">
+    <a href='https://play.google.com/store/apps/details?id=com.soyllamas.inventario&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'
        target="_blank"
-       class="w-full no-underline text-white float-right md:w-fit bg-rose-400 font-medium px-8 py-4 rounded-full shadow hover:transform hover:scale-105 duration-300 hover:shadow-xl">
-        Descargar App
+       class="pointer-events-auto float-right mx-1 shadow hover:transform hover:scale-105 duration-300 hover:shadow-xl bg-black rounded-xl border-2 border-[#A6A5A5]">
+        <img class="mx-auto h-14" alt='Disponible en Google Play' src='/inventario/google-play-badge.svg'/>
+    </a>
+    <a href='https://apps.apple.com/us/app/mi-inventario/id1143869215'
+       target="_blank"
+       class="pointer-events-auto float-right mx-1 shadow hover:transform hover:scale-105 duration-300 hover:shadow-xl bg-black rounded-xl border-2 border-[#A6A5A5]">
+        <img class="mx-auto h-14" alt='Disponible en Google Play' src='/inventario/app-store.svg'/>
     </a>
 </div>
 

@@ -304,7 +304,6 @@
         color: #6b7280;
         margin-bottom: 10px;
         line-height: 24px;
-        size: 16px;
     }
 
     .entry {

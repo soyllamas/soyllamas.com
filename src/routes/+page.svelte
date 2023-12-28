@@ -33,8 +33,7 @@
 
 <section class="hero">
     <h1 class="summary"><span class="gradient-text">Android & Flutter Developer</span> — 👋🏼 I'm a passionate creator
-        of high-quality human-centered products. Currently working as Flutter Developer at <a
-                href="https://letsmake.com">Make</a>.</h1>
+        of high-quality human-centered products. Currently working at <a href="https://letsmake.com">Make</a>.</h1>
 </section>
 
 <main>
@@ -48,15 +47,18 @@
             <a href="https://fondeadora.com"><p class="title">Software Engineer, Flutter — Fondeadora</p></a>
             <p class="subtitle">April 2022 — February 2023</p>
             <ul>
-                <li>Enabled our team to adopt <a href="https://en.wikipedia.org/wiki/Extreme_programming">Extreme
+                <li class="list-disc">Enabled our team to adopt <a
+                        href="https://en.wikipedia.org/wiki/Extreme_programming">Extreme
                     Programming (XP)</a> values, principles and practices resulting in improved collaboration, faster
                     feedback loops and enhanced software quality.
                 </li>
-                <li>Facilitated the transition from Git-flow to <a href="https://trunkbaseddevelopment.com/">Trunk-Based
+                <li class="list-disc">Facilitated the transition from Git-flow to <a
+                        href="https://trunkbaseddevelopment.com/">Trunk-Based
                     Development</a> leading to faster delivery, smooth code integration, and increased software
                     stability.
                 </li>
-                <li>Boosted productivity and minimized defects by nurturing a culture of continuous improvement,
+                <li class="list-disc">Boosted productivity and minimized defects by nurturing a culture of continuous
+                    improvement,
                     emphasizing on pair programming, test-driven development and continuous integration.
                 </li>
             </ul>
@@ -65,13 +67,16 @@
             <a href="https://wizeline.com"><p class="title">Software Engineer II, Android — Wizeline</p></a>
             <p class="subtitle">January 2021 — April 2022</p>
             <ul>
-                <li>Migrated Walmart-México's app from manual dependency injection to Android’s recommended framework,
+                <li class="list-disc">Migrated Walmart-México's app from manual dependency injection to Android’s
+                    recommended framework,
                     Hilt. Reducing boilerplate, improving productivity.
                 </li>
-                <li>Participated as an active member of a community which fosters high-quality software development
+                <li class="list-disc">Participated as an active member of a community which fosters high-quality
+                    software development
                     using SOLID Principles, Design Patters, Clean Architecture, Test-Driven Development, to name a few.
                 </li>
-                <li>Led and developed an internal project to improve onboarding experience for new hires through a
+                <li class="list-disc">Led and developed an internal project to improve onboarding experience for new
+                    hires through a
                     simple and elegant learning platform.
                 </li>
             </ul>
@@ -80,16 +85,20 @@
             <a href="https://nivelate.mx" target="_blank"><p class="title">Co-founder & CTO — Nivélate</p></a>
             <p class="subtitle">November 2015 — January 2021</p>
             <ul>
-                <li>Managed a cross-functional team of 14 people conformed of marketers, developers, designers and
+                <li class="list-disc">Managed a cross-functional team of 14 people conformed of marketers, developers,
+                    designers and
                     academics following <a href="https://agilemanifesto.org/">agile principles</a>.
                 </li>
-                <li>Implemented <a href="https://www.whatmatters.com/faqs/okr-meaning-definition-example">OKRs</a> to
+                <li class="list-disc">Implemented <a
+                        href="https://www.whatmatters.com/faqs/okr-meaning-definition-example">OKRs</a> to
                     define specific goals for the company and individual contributors.
                 </li>
-                <li>Guaranteed high-quality software by constantly training the development team on SOLID Principles and
+                <li class="list-disc">Guaranteed high-quality software by constantly training the development team on
+                    SOLID Principles and
                     Clean Architecture.
                 </li>
-                <li>Clearly aligned each contributor's personal aspirations with business objectives to increase
+                <li class="list-disc">Clearly aligned each contributor's personal aspirations with business objectives
+                    to increase
                     fulfillment and satisfaction while reaching our goals using <a
                             href="https://www.whatmatters.com/resources/difference-between-okr-cfr">CFRs</a>.
                 </li>
@@ -99,11 +108,11 @@
             <p class="title">Mobile Developer — Brounie</p>
             <p class="subtitle">January 2018 — February 2019</p>
             <ul>
-                <li>Contributed to the development of 5+ apps for Android and iOS.
+                <li class="list-disc">Contributed to the development of 5+ apps for Android and iOS.
                 </li>
-                <li>Mastered MVVM design pattern ensuring app's quality, stability and performance.
+                <li class="list-disc">Mastered MVVM design pattern ensuring app's quality, stability and performance.
                 </li>
-                <li>Worked closely with customers and UI/UX designers to define app features.
+                <li class="list-disc">Worked closely with customers and UI/UX designers to define app features.
                 </li>
             </ul>
         </div>
@@ -177,7 +186,8 @@
     }
 
     :global(body) {
-        font-family: "SF Pro Display", system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji
+        font-family: "SF Pro Display", system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji;
+        font-weight: 400;
     }
 
     nav {
@@ -213,6 +223,7 @@
 
     .gradient-text {
         background: -webkit-linear-gradient(72deg, #7549F2, #DF58D2, #ED787C);
+        background-clip: text;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
     }
@@ -235,12 +246,6 @@
         font-weight: 700;
     }
 
-    /*h2 {*/
-    /*    font-size: 16px;*/
-    /*    font-weight: 400;*/
-    /*    text-align: center;*/
-    /*}*/
-
     h3 {
         font-size: 36px;
         margin-bottom: 24px;
@@ -258,12 +263,14 @@
     }
 
     li a {
-        color: #ED787C;
+        color: #fb7185;
+        background: transparent;
         text-decoration: underline;
     }
 
     li a:hover {
-        color: #ED787C;
+        color: #fb7185;
+        background: transparent;
         text-decoration: underline;
     }
 
@@ -277,7 +284,7 @@
     .subtitle {
         font-size: 16px;
         font-weight: 400;
-        opacity: 66%;
+        color: #4b5563;
     }
 
     .footer {
@@ -294,7 +301,7 @@
     }
 
     li {
-        color: #0000006E;
+        color: #6b7280;
         margin-bottom: 10px;
         line-height: 24px;
         size: 16px;

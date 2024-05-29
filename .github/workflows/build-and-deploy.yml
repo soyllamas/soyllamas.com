@@ -1,0 +1,28 @@
+name: Build & Deploy
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build_and_preview:
+    name: Build & Deploy
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: 🛠️ Install Dependencies
+        run: npm install
+
+      - name: 🏗️ Build
+        run: npm run build
+
+      - name: 🚀 Deploy
+        uses: FirebaseExtended/action-hosting-deploy@v0
+        with:
+          repoToken: '${{ secrets.GITHUB_TOKEN }}'
+          firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_SOY_LLAMAS }}'
+          projectId: soy-llamas
+          channelId: live

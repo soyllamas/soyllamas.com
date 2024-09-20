@@ -30,13 +30,13 @@
     <div class="h-50vh mx-auto grid justify-center items-center">
         <div>
             <h1 class="text-4xl text-center font-bold mb-4">Revoluciona tu negocio desde tu celular</h1>
-            <p class="text-xl text-center">La nueva solución digital diseñada específicamente para consultoras de
+            <p class="text-xl text-center">La solución digital diseñada específicamente para consultoras de
                 belleza Mary Kay como tú.</p>
         </div>
     </div>
     <img src="/inventario/cover.png" alt="" class="mx-auto w-64 mb-16">
     <p>Hola 👋🏼,</p>
-    <p>Conoce <a class="text-rose-500 underline" href="{link}" target="_blank">Mi Inventario</a>, la nueva solución
+    <p>Conoce <a class="text-rose-500 underline" href="{link}" target="_blank">Mi Inventario</a>, la solución
         digital diseñada
         específicamente para consultoras de belleza Mary Kay como tú.</p>
     <p>¿Administrar tu inventario consume demasiado tiempo y esfuerzo? Nosotros lo entendemos y, por eso, hemos creado

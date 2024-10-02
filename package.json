@@ -1,6 +1,6 @@
 {
-	"name": "temp",
-	"version": "0.0.1",
+	"name": "soyllamas",
+	"version": "2024.10.1",
 	"private": true,
 	"scripts": {
 		"dev": "vite dev",

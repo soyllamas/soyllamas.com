@@ -1,8 +1,78 @@
 <head:script>
     <title>Duo — Finanzas para parejas</title>
+    <meta name="title" content="Duo — Finanzas para parejas">
+    <meta name="description" content="Lleva seguimiento de tus gastos compartidas.">
 </head:script>
 
-<div class="mx-auto max-w-lg py-24 pt-16 px-4">
-    <h1 class="font-medium text-2xl text-center">Duo</h1>
-    <p class="text-slate-600 text-center">Finanzas para parejas.</p>
+<script>
+    import {onMount} from "svelte";
+
+    let link = 'https://play.google.com/store/apps/details?id=com.soyllamas.inventario';
+
+    onMount(() => {
+        const userAgent = navigator.userAgent || navigator.vendor || window.opera;
+
+        // Redireccionar a Apple App Store para usuarios de iOS
+        if (/ipad|iphone|ipod|macintosh/.test(userAgent?.toLowerCase()) && !window.MSStream) {
+            link = "https://apps.apple.com/us/app/mi-inventario/id1143869215";
+            return;
+        }
+
+    });
+</script>
+
+<div id="nav" class="fixed h-16 bg-white border-b-2 w-full grid justify-center items-center gap-3 px-6">
+    <img src="/duo/logo.png" alt="" class="aspect-square w-8">
+    <p class="font-medium">Duo</p>
 </div>
+<div class="mx-auto max-w-lg py-24 pt-16 px-4">
+    <div class="h-50vh mx-auto grid justify-center items-center">
+        <div>
+            <h1 class="text-4xl text-center font-bold mb-4">Mejora tus finanzas en pareja</h1>
+            <p class="text-xl text-center">Lleva seguimiento de tus gastos compartidos.</p>
+        </div>
+    </div>
+    <img src="/duo/cover.png" alt="" class="mx-auto w-64 mb-16">
+    <p>Hola 👋🏼,</p>
+    <p>Conoce <a class="text-emerald-900 underline" href="{link}" target="_blank">Duo</a>, la solución
+        digital diseñada
+        específicamente para parejas que quieren llevar mejor seguimiento de sus gastos compartidos.</p>
+    <ul class="list-disc ml-8 my-6">
+        <li><b>Registra tus compras:</b> Agrega gastos a meses que compartes con tu pareja.</li>
+        <li><b>Elige como dividirlo:</b> Divide tus gastos por monto exacto, por porcentaje o mitad y mitad.</li>
+        <li><b>Filtra tus gastos:</b> Ve cuanto te toca pagar este mes, el próximo mes, lo que falta por pagar o todos
+            tus gastos.
+        </li>
+    </ul>
+    <p>Para cualquier duda o consulta, no dudes en contactarnos. Estaremos encantados de asistirte.</p>
+    <p>Daniel Llamas <br> <a href="mailto:daniel@soyllamas.com"
+                             class="text-emerald-900 underline">daniel@soyllamas.com</a>
+    </p>
+</div>
+<!--<div class="fixed grid grid-cols-2 sm:block pointer-events-none text-right bottom-0 left-0 w-full p-6 md:p-12"-->
+<!--     style="env(safe-area-inset-bottom);">-->
+<!--    <a href='https://play.google.com/store/apps/details?id=com.soyllamas.inventario&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'-->
+<!--       target="_blank"-->
+<!--       class="pointer-events-auto float-right mx-1 shadow hover:transform hover:scale-105 duration-300 hover:shadow-xl bg-black rounded-xl border-2 border-[#A6A5A5]">-->
+<!--        <img class="mx-auto h-14" alt='Disponible en Google Play' src='/inventario/google-play-badge.svg'/>-->
+<!--    </a>-->
+<!--    <a href='https://apps.apple.com/us/app/mi-inventario/id1143869215'-->
+<!--       target="_blank"-->
+<!--       class="pointer-events-auto float-right mx-1 shadow hover:transform hover:scale-105 duration-300 hover:shadow-xl bg-black rounded-xl border-2 border-[#A6A5A5]">-->
+<!--        <img class="mx-auto h-14" alt='Disponible en Google Play' src='/inventario/app-store.svg'/>-->
+<!--    </a>-->
+<!--</div>-->
+
+<style>
+    p {
+        @apply my-4;
+    }
+
+    li {
+        @apply my-1;
+    }
+
+    #nav {
+        grid-template-columns: auto 1fr;
+    }
+</style>

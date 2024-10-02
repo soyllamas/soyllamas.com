@@ -35,8 +35,8 @@
     <img src="/duo/cover.png" alt="" class="mx-auto w-64 mb-16">
     <p>Hola 👋🏼,</p>
     <p>Conoce <a class="text-emerald-900 underline" href="{link}" target="_blank">Duo</a>, la solución
-        digital diseñada
-        específicamente para parejas que quieren llevar mejor seguimiento de sus gastos compartidos.</p>
+        digital diseñada específicamente para parejas que quieren llevar mejoar el seguimiento de sus gastos
+        compartidos.</p>
     <ul class="list-disc ml-8 my-6">
         <li><b>Registra tus compras:</b> Agrega gastos a meses que compartes con tu pareja.</li>
         <li><b>Elige como dividirlo:</b> Divide tus gastos por monto exacto, por porcentaje o mitad y mitad.</li>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<!--Copyright (c) 2024. TabaPay, Inc. All Rights Reserved...-->
+<html>
+<head>
+    <title>Add Debit Card</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <script src="https://iframes.sandbox.tabapay.net/TabaPaySDK.js"></script>
+    <style>
+        div {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 3.5%
+        }
+    </style>
+</head>
+<body>
+<div id="iframe-container"></div>
+<script type="text/javascript">
+    const containerEl = document.getElementById("iframe-container");
+    config = {
+        cardNumberInput: {
+            labelText: " Card Number ",
+            placeholderText: "13-19 digits",
+            labelInBorder: "static",
+            invalidTextPosition: "top-right",
+            invalidText: "Please enter your Card Number",
+            separator: ""
+        },
+        expirationDateInput: {
+            labelText: " Expiration Date ",
+            placeholderText: "MM/YY format",
+            labelInBorder: "static",
+            invalidText: "Please enter your Card Expiration Date",
+            invalidTextPosition: "top-right"
+        },
+        cscInput: {
+            labelText: " Card Security Code ",
+            placeholderText: "3-4 digits",
+            labelInBorder: "static",
+            invalidText: "Please enter your Card Security Code",
+            invalidTextPosition: "top-right",
+            required: "Required",
+            hideInput: !0
+        },
+        buttons: {
+            submit: {
+                buttonText: "Add Card",
+                border: "none",
+                borderRadius: "10px",
+                backgroundColorDisabled: "#E3E4E4",
+                backgroundColorEnabled: "#491094",
+                backgroundColorHover: "#491094",
+                textColorDisabled: "#969898",
+                textColorEnabled: "#fff",
+                width: "550px",
+                height: "48px",
+                fontFamily: "Arial, sans-serif",
+                order: "2"
+            },
+            reset: {
+                buttonText: "Clear",
+                backgroundColorEnabled: "#fff",
+                backgroundColorDisabled: "#fff",
+                backgroundColorHover: "#fff",
+                border: "none",
+                textColorDisabled: "#fff",
+                textColorEnabled: "#491094",
+                textColorHover: "#491094",
+                width: "550px",
+                height: "48px",
+                fontFamily: "Arial, sans-serif",
+                order: "1"
+            },
+            layout: "column"
+        },
+        inputStyle: {
+            placeholderTextColor: "#A3AEAC",
+            borderStyle: "2px solid",
+            borderColor: "#DBE5E3",
+            borderFocus: "2px solid",
+            borderColorFocus: "#DBE5E3",
+            invalidBorder: "2px solid",
+            invalidBorderColor: "#DBE5E3",
+            invalidBorderFocus: "2px solid",
+            invalidBorderColorFocus: "#e55",
+            invalidBackgroundColor: "#fff",
+            borderRadius: "6px",
+            padding: "14px 16px",
+            transposeHeight: "-150%",
+            fontSize: "16px",
+            fontFamily: "Arial, sans-serif"
+        },
+        labelStyle: {
+            fontSize: "12px",
+            textColor: "#191C1B99",
+            fontWeight: "600",
+            fontFamily: "Arial, sans-serif"
+        },
+        invalidStyle: {
+            fontSize: ".9em",
+            fontFamily: "Arial, sans-serif"
+        },
+        insetFrame: {
+            backgroundColor: "#fff",
+            maxWidth: "560px"
+        },
+        unlimitedWidth: !0,
+        layout: "separate-rows",
+        formRowGap: "1.5rem",
+        clientId: "QbgJqlIAgQNDSlltS9JpLA",
+        firstSixCard: !1,
+        eventListeners: {
+            submit: e => {
+                window.parent.postMessage(e, "*")
+            },
+            cancel: e => {
+                window.parent.postMessage(e, "*")
+            }
+        }
+    };
+    const {element} = tabaPaySdk.createIframe(config);
+    containerEl.append(element)
+</script>
+</body>
+</html>

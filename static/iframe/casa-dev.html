@@ -13,6 +13,11 @@
             margin-top: 3.5%
         }
     </style>
+    <script>
+        window.addEventListener('load', function () {
+            window.parent.postMessage('initialized', '*');
+        });
+    </script>
 </head>
 <body>
 <div id="iframe-container"></div>
@@ -21,22 +26,22 @@
     config = {
         cardNumberInput: {
             labelText: " Card Number ",
-            placeholderText: "13-19 digits",
+            placeholderText: "1234 5678 9012 3456",
             labelInBorder: "static",
             invalidTextPosition: "top-right",
             invalidText: "Please enter your Card Number",
             separator: ""
         },
         expirationDateInput: {
-            labelText: " Expiration Date ",
-            placeholderText: "MM/YY format",
+            labelText: " Exp Date ",
+            placeholderText: "MM/YY",
             labelInBorder: "static",
             invalidText: "Please enter your Card Expiration Date",
             invalidTextPosition: "top-right"
         },
         cscInput: {
-            labelText: " Card Security Code ",
-            placeholderText: "3-4 digits",
+            labelText: " CVV ",
+            placeholderText: "123",
             labelInBorder: "static",
             invalidText: "Please enter your Card Security Code",
             invalidTextPosition: "top-right",
@@ -45,7 +50,7 @@
         },
         buttons: {
             submit: {
-                buttonText: "Add Card",
+                buttonText: "Add Debit Card",
                 border: "none",
                 borderRadius: "10px",
                 backgroundColorDisabled: "#E3E4E4",
@@ -53,7 +58,7 @@
                 backgroundColorHover: "#491094",
                 textColorDisabled: "#969898",
                 textColorEnabled: "#fff",
-                width: "550px",
+                width: "100%",
                 height: "48px",
                 fontFamily: "Arial, sans-serif",
                 order: "2"
@@ -67,7 +72,7 @@
                 textColorDisabled: "#fff",
                 textColorEnabled: "#491094",
                 textColorHover: "#491094",
-                width: "550px",
+                width: "100%",
                 height: "48px",
                 fontFamily: "Arial, sans-serif",
                 order: "1"
@@ -95,6 +100,7 @@
             fontSize: "12px",
             textColor: "#191C1B99",
             fontWeight: "600",
+            gap: "0",
             fontFamily: "Arial, sans-serif"
         },
         invalidStyle: {

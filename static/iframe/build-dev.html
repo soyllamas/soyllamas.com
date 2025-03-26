@@ -5,14 +5,6 @@
     <title>Add Debit Card</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <script src="https://iframes.sandbox.tabapay.net/TabaPaySDK.js"></script>
-    <style>
-        div {
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-            margin-top: 3.5%
-        }
-    </style>
     <script>
         window.addEventListener('load', function () {
             window.parent.postMessage('initialized', '*');
@@ -20,9 +12,7 @@
     </script>
 </head>
 <body>
-<div id="iframe-container"></div>
 <script type="text/javascript">
-    const containerEl = document.getElementById("iframe-container");
     config = {
         cardNumberInput: {
             labelText: " Card Number ",
@@ -110,7 +100,7 @@
         },
         insetFrame: {
             backgroundColor: "#fff",
-            maxWidth: "560px"
+            maxWidth: "560px",
         },
         unlimitedWidth: !0,
         layout: "separate-rows",
@@ -127,7 +117,11 @@
         }
     };
     const {element} = tabaPaySdk.createIframe(config);
-    containerEl.append(element)
+    element.style.margin = "0 auto";
+    element.querySelectorAll('input, button').forEach(element => {
+        element.style.pointerEvents = 'auto';
+    });
+    document.body.appendChild(element);
 </script>
 </body>
 </html>

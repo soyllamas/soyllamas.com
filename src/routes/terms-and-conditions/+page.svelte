@@ -1,3 +1,7 @@
+<svelte:head>
+    <title>Términos y Condiciones</title>
+</svelte:head>
+
 <div class="mx-8 md:mx-auto max-w-2xl my-16">
     <h1>Términos y Condiciones</h1>
 

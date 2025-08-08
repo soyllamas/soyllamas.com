@@ -1,3 +1,7 @@
+<svelte:head>
+    <title>Política de Privacidad</title>
+</svelte:head>
+
 <div class="mx-8 md:mx-auto max-w-2xl my-16">
     <h1>Política de Privacidad</h1>
 

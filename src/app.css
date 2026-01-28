@@ -1,3 +1,10 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+
+@theme {
+	--font-family-sans: "IBM Plex Mono", monospace;
+	--font-family-mono: "IBM Plex Mono", monospace;
+	--spacing-25vh: 25vh;
+	--spacing-50vh: 50vh;
+	--spacing-75vh: 75vh;
+	--spacing-100vh: 100vh;
+}

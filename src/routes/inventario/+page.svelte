@@ -5,16 +5,16 @@
           content="La nueva solución digital diseñada específicamente para consultoras de belleza Mary Kay como tú.">
 </head:script>
 
-<script>
+<script lang="ts">
     import {onMount} from "svelte";
 
     let link = 'https://play.google.com/store/apps/details?id=com.soyllamas.inventario';
 
     onMount(() => {
-        const userAgent = navigator.userAgent || navigator.vendor || window.opera;
+        const userAgent = navigator.userAgent || navigator.vendor || (window as any).opera;
 
         // Redireccionar a Apple App Store para usuarios de iOS
-        if (/ipad|iphone|ipod|macintosh/.test(userAgent?.toLowerCase()) && !window.MSStream) {
+        if (/ipad|iphone|ipod|macintosh/.test(userAgent?.toLowerCase()) && !(window as any).MSStream) {
             link = "https://apps.apple.com/us/app/mi-inventario/id1143869215";
             return;
         }
@@ -35,29 +35,29 @@
         </div>
     </div>
     <img src="/inventario/cover.png" alt="" class="mx-auto w-64 mb-16">
-    <p>Hola 👋🏼,</p>
-    <p>Conoce <a class="text-rose-500 underline" href="{link}" target="_blank">Mi Inventario</a>, la solución
+    <p class="my-4">Hola 👋🏼,</p>
+    <p class="my-4">Conoce <a class="text-rose-500 underline" href="{link}" target="_blank">Mi Inventario</a>, la solución
         digital diseñada
         específicamente para consultoras de belleza Mary Kay como tú.</p>
-    <p>¿Administrar tu inventario consume demasiado tiempo y esfuerzo? Nosotros lo entendemos y, por eso, hemos creado
+    <p class="my-4">¿Administrar tu inventario consume demasiado tiempo y esfuerzo? Nosotros lo entendemos y, por eso, hemos creado
         <a class="text-rose-500 underline" href="{link}" target="_blank">Mi Inventario</a>.</p>
     <ul class="list-disc ml-8 my-6">
-        <li><b>Explora el catálogo:</b> Actualizamos el catálogo de productos Mary Kay cada mes.</li>
-        <li><b>Actualización en Tiempo Real:</b> Mantén un registro preciso de tus productos, visualiza cuántos
+        <li class="my-1"><b>Explora el catálogo:</b> Actualizamos el catálogo de productos Mary Kay cada mes.</li>
+        <li class="my-1"><b>Actualización en Tiempo Real:</b> Mantén un registro preciso de tus productos, visualiza cuántos
             productos tienes y recibe alertas cuando sea el momento de reponer.
         </li>
-        <li><b>Organización Eficiente:</b> Clasifica productos por categorías, precios y más. Todo al alcance de tu
+        <li class="my-1"><b>Organización Eficiente:</b> Clasifica productos por categorías, precios y más. Todo al alcance de tu
             mano.
         </li>
-        <li><b>Fácil de Usar:</b> Una interfaz intuitiva que te permitirá manejar tu inventario de manera rápida y
+        <li class="my-1"><b>Fácil de Usar:</b> Una interfaz intuitiva que te permitirá manejar tu inventario de manera rápida y
             sencilla.
         </li>
     </ul>
-    <p>Para cualquier duda o consulta, no dudes en contactarnos. Estaremos encantados de asistirte.</p>
-    <p>¡Esperamos que disfrutes de los beneficios de <a class="text-rose-500 underline" href="{link}" target="_blank">Mi
+    <p class="my-4">Para cualquier duda o consulta, no dudes en contactarnos. Estaremos encantados de asistirte.</p>
+    <p class="my-4">¡Esperamos que disfrutes de los beneficios de <a class="text-rose-500 underline" href="{link}" target="_blank">Mi
         Inventario</a> y
         te deseamos mucho éxito en tu camino con Mary Kay!</p>
-    <p>Daniel Llamas <br> <a href="mailto:daniel@soyllamas.com" class="text-rose-500 underline">daniel@soyllamas.com</a>
+    <p class="my-4">Daniel Llamas <br> <a href="mailto:daniel@soyllamas.com" class="text-rose-500 underline">daniel@soyllamas.com</a>
     </p>
 </div>
 <div class="fixed grid grid-cols-2 sm:block pointer-events-none text-right bottom-0 left-0 w-full p-6 md:p-12"
@@ -75,14 +75,6 @@
 </div>
 
 <style>
-    p {
-        @apply my-4;
-    }
-
-    li {
-        @apply my-1;
-    }
-
     #nav {
         grid-template-columns: auto 1fr;
     }

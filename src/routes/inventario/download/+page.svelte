@@ -1,8 +1,8 @@
-<script>
+<script lang="ts">
     import {onMount} from 'svelte';
 
     onMount(() => {
-        const userAgent = navigator.userAgent || navigator.vendor || window.opera;
+        const userAgent = navigator.userAgent || navigator.vendor || (window as any).opera;
 
         // Redireccionar a Google Play para usuarios de Android
         if (/android/i.test(userAgent?.toLowerCase())) {
@@ -11,7 +11,7 @@
         }
 
         // Redireccionar a Apple App Store para usuarios de iOS
-        if (/ipad|iphone|ipod|macintosh/.test(userAgent?.toLowerCase()) && !window.MSStream) {
+        if (/ipad|iphone|ipod|macintosh/.test(userAgent?.toLowerCase()) && !(window as any).MSStream) {
             window.location.replace("https://apps.apple.com/us/app/mi-inventario/id1143869215");
             return;
         }

@@ -4,16 +4,16 @@
     <meta name="description" content="Lleva seguimiento de tus gastos compartidas.">
 </head:script>
 
-<script>
+<script lang="ts">
     import {onMount} from "svelte";
 
     let link = 'https://play.google.com/store/apps/details?id=com.soyllamas.inventario';
 
     onMount(() => {
-        const userAgent = navigator.userAgent || navigator.vendor || window.opera;
+        const userAgent = navigator.userAgent || navigator.vendor || (window as any).opera;
 
         // Redireccionar a Apple App Store para usuarios de iOS
-        if (/ipad|iphone|ipod|macintosh/.test(userAgent?.toLowerCase()) && !window.MSStream) {
+        if (/ipad|iphone|ipod|macintosh/.test(userAgent?.toLowerCase()) && !(window as any).MSStream) {
             link = "https://apps.apple.com/us/app/mi-inventario/id1143869215";
             return;
         }
@@ -33,19 +33,19 @@
         </div>
     </div>
     <img src="/duo/cover.png" alt="" class="mx-auto w-64 mb-16">
-    <p>Hola 👋🏼,</p>
-    <p>Conoce <a class="text-emerald-900 underline" href="{link}" target="_blank">Duo</a>, la solución
+    <p class="my-4">Hola 👋🏼,</p>
+    <p class="my-4">Conoce <a class="text-emerald-900 underline" href="{link}" target="_blank">Duo</a>, la solución
         digital diseñada específicamente para parejas que quieren llevar mejoar el seguimiento de sus gastos
         compartidos.</p>
     <ul class="list-disc ml-8 my-6">
-        <li><b>Registra tus compras:</b> Agrega gastos a meses que compartes con tu pareja.</li>
-        <li><b>Elige como dividirlo:</b> Divide tus gastos por monto exacto, por porcentaje o mitad y mitad.</li>
-        <li><b>Filtra tus gastos:</b> Ve cuanto te toca pagar este mes, el próximo mes, lo que falta por pagar o todos
+        <li class="my-1"><b>Registra tus compras:</b> Agrega gastos a meses que compartes con tu pareja.</li>
+        <li class="my-1"><b>Elige como dividirlo:</b> Divide tus gastos por monto exacto, por porcentaje o mitad y mitad.</li>
+        <li class="my-1"><b>Filtra tus gastos:</b> Ve cuanto te toca pagar este mes, el próximo mes, lo que falta por pagar o todos
             tus gastos.
         </li>
     </ul>
-    <p>Para cualquier duda o consulta, no dudes en contactarnos. Estaremos encantados de asistirte.</p>
-    <p>Daniel Llamas <br> <a href="mailto:daniel@soyllamas.com"
+    <p class="my-4">Para cualquier duda o consulta, no dudes en contactarnos. Estaremos encantados de asistirte.</p>
+    <p class="my-4">Daniel Llamas <br> <a href="mailto:daniel@soyllamas.com"
                              class="text-emerald-900 underline">daniel@soyllamas.com</a>
     </p>
 </div>
@@ -64,14 +64,6 @@
 <!--</div>-->
 
 <style>
-    p {
-        @apply my-4;
-    }
-
-    li {
-        @apply my-1;
-    }
-
     #nav {
         grid-template-columns: auto 1fr;
     }
